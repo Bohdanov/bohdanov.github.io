@@ -208,6 +208,81 @@ button:hover{
 	background-size:cover;
 	background-position:bottom;
 }
-@media only screen and (max-width: 767px) {
-
+@media only screen and (max-width: 440px) {
+h1{
+	margin: 30px;
+	font-weight: 100;
+	font-size: 50px;
+}
+h2{
+	margin: 30px;
+	font-weight: 400;
+	font-size: 30px;
+}
+h3{
+	color: #ccc;
+	margin-top: 60px;
+	font-weight: 400;
+	font-size: 12px;
+}
+h4{
+	color: #000;
+	font-weight: 400;
+	font-size: 20px;	
+}
+h5{
+	margin: 20px;
+	font-weight: 100;
+	font-size: 20px;
+}
+h5 > a:hover{
+	margin: 20px;
+	font-weight: 100;
+	font-size: 20px;
+	color: #fff;
+}
+h5 > a:visited{
+	margin: 20px;
+	font-weight: 100;
+	font-size: 20px;
+	color: #fff;
+}
+body{
+	font-size: 20px;
+}
+.this{
+	padding: 50px 0 50px;
+	background-position:right;
+}
+.papercraft{	
+	padding: 50px 0 50px;
+}
+.papercraft:hover{	
+	padding: 50px 0 50px;
+}
+.template{
+	padding: 50px 0 50px;
+}
+.first{
+	padding: 50px 0 50px;
+}
+.second{
+	padding: 50px 0 50px;
+}
+.third{
+	padding: 50px 0 50px;
+}
+.fourth{
+	padding: 50px 0 50px;
+}
+.contact{
+	padding: 50px 0 50px;
+}
+}
+@media only screen and (max-width: 440px) {
+h1{
+	margin: 30px;
+	font-weight: 100;
+	font-size: 30px;
+}
 }
