@@ -76,6 +76,12 @@ h5{
 	font-weight: 100;
 	font-size: 40px;
 }
+h5 > a{
+	margin: 20px;
+	font-weight: 100;
+	font-size: 40px;
+	color: #fff;
+}
 h5 > a:hover{
 	margin: 20px;
 	font-weight: 100;
@@ -115,12 +121,6 @@ button:hover{
 	border-radius: 5px;
 	transition: all 1s;
 }
-@keyframes intro{
-0%   {color: #000; opacity: 1; background-position: top; background-size:110%;}
-25%  {opacity: 0.5;}
-50%  {opacity: 0;}
-100% {color: #fff;}
-}
 .papercraft{	
 	padding: 250px 0 250px;
 	background:-webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../img/2.jpg);
@@ -132,7 +132,6 @@ button:hover{
 }
 .papercraft:hover{	
 	padding: 250px 0 250px;
-	animation: intro 6s linear;	
 	background:-webkit-linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../img/2.jpg);
 	background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../img/2.jpg);
 	background-position:bottom;
@@ -142,7 +141,8 @@ button:hover{
 }
 .what{
 	color: #ccc;
-	background: #333;	
+	background: #333;  
+	margin-bottom: 50px;	
 }
 .this{
 	padding: 250px 0 250px;
@@ -207,11 +207,23 @@ button:hover{
 	background-size:cover;
 	background-position:bottom;
 }
+.up{ 
+	position: fixed;
+	left: 40px;
+	bottom: 20px;
+	opacity: 0.8;
+	outline: none;
+}
+@media only screen and (max-width: 768px) {
+.up{
+	display: none;
+}
+}
 @media only screen and (max-width: 440px) {
 h1{
 	margin: 30px;
 	font-weight: 100;
-	font-size: 50px;
+	font-size: 30px;
 }
 h2{
 	margin: 30px;
@@ -233,6 +245,12 @@ h5{
 	margin: 20px;
 	font-weight: 100;
 	font-size: 20px;
+}
+h5 > a{
+	margin: 20px;
+	font-weight: 100;
+	font-size: 20px;
+	color: #fff;
 }
 h5 > a:hover{
 	margin: 20px;
@@ -276,12 +294,5 @@ body{
 }
 .contact{
 	padding: 50px 0 50px;
-}
-}
-@media only screen and (max-width: 440px) {
-h1{
-	margin: 30px;
-	font-weight: 100;
-	font-size: 30px;
 }
 }
