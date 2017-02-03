@@ -94,6 +94,9 @@ h5 > a:visited{
 	font-size: 40px;
 	color: #fff;
 }
+h5 > a[href^="mailto:"] {
+  color: #fff;
+}
 p{
 	font-weight: 400;	
 }
