@@ -4,7 +4,7 @@
 
 	table {
 	border-collapse: collapse; /* Убираем двойные линии между ячейками */
-	width: 450px; /* Ширина таблицы */
+	width: 550px; /* Ширина таблицы */
 	}
 	th, td {
 	border: 1px solid black; /* Параметры рамки */
@@ -18,3 +18,14 @@
 	vertical-align: bottom; /* Выравнивание по нижнему краю */
 	padding: 0; /* Убираем поля вокруг текста */
 	}
+	 th#day {
+	color: #FFFFFF;
+	background: #D63636;
+	height: 20px;
+	vertical-align: bottom; 
+	padding: 0; 
+	} 
+	table#tt1 {
+	display: none;
+	}
+	

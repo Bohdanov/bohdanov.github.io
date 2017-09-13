@@ -7,7 +7,13 @@ var uaDay;
 var uaMonth;
 var pairArray = [];
 var weekNum;
-
+function f(){
+  var e = document.getElementById('tt1').style.display;
+  if( e == 'none' ){
+        document.getElementById('tt1').style.display = 'block';       
+    }
+    else document.getElementById('tt1').style.display = 'none';
+}
 switch(month){
 case 8:
 if ((nowDay >= 11 && nowDay <= 17)||(nowDay => 25 && nowDay <= 30))
