@@ -16,22 +16,22 @@ function f(){
 }
 switch(month){
 case 8:
-if ((nowDay >= 11 && nowDay <= 17)||(nowDay => 25 && nowDay <= 30))
+if ((nowDay >= 11 && nowDay <= 17)||(nowDay >= 25 && nowDay <= 30))
 {weekNum = 1;} else weekNum = 2;
 uaMonth = 'вересня';
 break;
 case 9:
-if ((nowDay == 1)||(nowDay >= 9 && nowDay <= 15)||(nowDay => 23 && nowDay <= 29))
+if ((nowDay == 1)||(nowDay >= 9 && nowDay <= 15)||(nowDay >= 23 && nowDay <= 29))
 {weekNum = 1;} else weekNum = 2;
 uaMonth = 'жовтня';
 break;
 case 10:
-if ((nowDay >= 6 && nowDay <= 12)||(nowDay => 20 && nowDay <= 26))
+if ((nowDay >= 6 && nowDay <= 12)||(nowDay >= 20 && nowDay <= 26))
 {weekNum = 1;} else weekNum = 2;
 uaMonth = 'листопада';
 break;
 case 11:
-if ((nowDay >= 4 && nowDay <= 10)||(nowDay => 18 && nowDay <= 24))
+if ((nowDay >= 4 && nowDay <= 10)||(nowDay >= 18 && nowDay <= 24))
 {weekNum = 1;} else weekNum = 2;
 uaMonth = 'грудня';
 break;
