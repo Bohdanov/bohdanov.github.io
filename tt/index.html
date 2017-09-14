@@ -1,95 +1,96 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="/tt/style.css">
-	<title>Timetable</title>
-</head>
-<body>
-<p>Розклад</p>
-<p id="a1">Число, місяць</p>
-<table>
-<tr>
-<th>№</th>
-<th>Пара</th>
-<th>Ауд.</th>
-<th>Час</th>
-<th>Викладач</th>	
-</tr>
-<tr><td>1</td><td id="pr1">---</td><td id="at1">---</td><td id="tm1">8:20 - 9:40</td><td id="le1">---</td></tr>	
-<tr><td>2</td><td id="pr2">---</td><td id="at2">---</td><td id="tm2">9:50 - 11:10</td><td id="le2">---</td></tr>
-<tr><td>3</td><td id="pr3">---</td><td id="at3">---</td><td id="tm3">11:30 - 12:50</td><td id="le3">---</td></tr>
-<tr><td>4</td><td id="pr4">---</td><td id="at4">---</td><td id="tm4">13:00 - 14:20</td><td id="le4">---</td></tr>
-<tr><td>5</td><td id="pr5">---</td><td id="at5">---</td><td id="tm5">14:40 - 16:00</td><td id="le5">---</td></tr>
-<tr><td>6</td><td id="pr6">---</td><td id="at6">---</td><td id="tm6">16:10 - 17:30</td><td id="le6">---</td></tr>
-<tr><td>7</td><td id="pr7">---</td><td id="at7">---</td><td id="tm7">17:40 - 19:00</td><td id="le7">---</td></tr>
-</table>
-<button  onClick="f()">Розклад на тиждень</button>
-<table id="tt1">
-<tr>
-<th id="day">Понеділок</th>
-</tr>
-<tr>
-<th>№</th>
-<th>Пара</th>
-<th>Ауд.</th>
-<th>Час</th>
-<th>Викладач</th>	
-</tr>
-<tr><td>6</td><td id="pr6">СПЗ-Linux(лаби) /VHDL(лаби)</td><td id="at6">312</td><td id="tm6">16:10 - 17:30</td><td id="le6">Яковлєва І.Д.</td></tr>
-<tr><td>7</td><td id="pr7">VHDL</td><td id="at7">221</td><td id="tm7">17:40 - 19:00</td><td id="le7">Яковлєва І.Д.</td></tr>
-<tr>
-<th id="day">Вівторок</th>
-</tr>
-<tr>
-<th>№</th>
-<th>Пара</th>
-<th>Ауд.</th>
-<th>Час</th>
-<th>Викладач</th>	
-</tr>
-<tr><td>2</td><td id="pr2">--- /Криптографія(лаби)</td><td id="at2">312</td><td id="tm2">9:50 - 11:10</td><td id="le2">Вацек Д.О.</td></tr>
-<tr><td>3</td><td id="pr3">--- /Криптографія(практика)</td><td id="at3">317</td><td id="tm3">11:30 - 12:50</td><td id="le3">Іванущак Н.М.</td></tr>
-<tr><td>4</td><td id="pr4">Криптографія</td><td id="at4">224</td><td id="tm4">13:00 - 14:20</td><td id="le4">Іванущак Н.М.</td></tr>
-<tr><td>5</td><td id="pr5">English</td><td id="at5">211</td><td id="tm5">14:40 - 16:00</td><td id="le5">Козубська С.В.</td></tr>
-<th id="day">Середа</th>
-</tr>
-<tr>
-<th>№</th>
-<th>Пара</th>
-<th>Ауд.</th>
-<th>Час</th>
-<th>Викладач</th>
-</tr>
-<tr><td>2</td><td id="pr2">Комп. мережі</td><td id="at2">311</td><td id="tm2">9:50 - 11:10</td><td id="le2">Рощупкіна Н.В.</td></tr>
-<tr><td>3</td><td id="pr3">Пар. і розп. обч. /Бухоблік</td><td id="at3">106</td><td id="tm3">11:30 - 12:50</td><td id="le3">Лісовенко І.Д.</td></tr>
-<tr><td>4</td><td id="pr4">Java(лаби)</td><td id="at4">311</td><td id="tm4">13:00 - 14:20</td><td id="le4">Макарчук Р.І.</td></tr>
-<tr><td>5</td><td id="pr5">СПЗ-Linux /---</td><td id="at5">106</td><td id="tm5">14:40 - 16:00</td><td id="le5">Яковлєва І.Д.</td></tr>
-<th id="day">Четвер</th>
-</tr>
-<tr>
-<th>№</th>
-<th>Пара</th>
-<th>Ауд.</th>
-<th>Час</th>
-<th>Викладач</th>
-</tr>
-<tr><td>2</td><td id="pr2">Пар. і розп. обч.(лаби) /---</td><td id="at2">313</td><td id="tm2">9:50 - 11:10</td><td id="le2">Лісовенко І.Д.</td></tr>
-<tr><td>3</td><td id="pr3">Автоматиз. т.пр.(лаби) /---</td><td id="at3">302</td><td id="tm3">11:30 - 12:50</td><td id="le3">Герман І.І.</td></tr>
-<tr><td>4</td><td id="pr4">Автоматиз. т.пр.</td><td id="at4">106</td><td id="tm4">13:00 - 14:20</td><td id="le4">Воробець О.І.</td></tr>
-<tr><td>5</td><td id="pr5">Java</td><td id="at5">224</td><td id="tm5">14:40 - 16:00</td><td id="le5">Макарчук Р.І.</td></tr>
-<th id="day">П'ятниця</th>
-<tr>
-<th>№</th>
-<th>Пара</th>
-<th>Ауд.</th>
-<th>Час</th>
-<th>Викладач</th>
-</tr>
-<tr><td>4</td><td id="pr4">Комп. мережі</td><td id="at4">221</td><td id="tm4">13:00 - 14:20</td><td id="le4">Олар О.Я.</td></tr>
-<tr><td>5</td><td id="pr5">Бухоблік(лаби)</td><td id="at5">307</td><td id="tm5">14:40 - 16:00</td><td id="le5">Гордіца В.М.</td></tr>
-</table>
-</table>
-<script type="text/javascript" src="/tt/script.js"></script>
-</body>
-</html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="/tt/style.css">
+			<title>Timetable</title>
+		</head>
+		<body>
+			<p>Розклад</p>
+			<p id="a1">Число, місяць</p>
+			<p id="p1">Пара номер</p>
+			<p><span>Час - </span><span id="time">00:00:00</span></p>
+			<table>
+			<tr>
+			<th>№</th>
+			<th>Пара</th>
+			<th>Ауд.</th>
+			<th>Час</th>
+			<th>Викладач</th>
+			</tr>
+			<tr><td>1</td><td id="pr1">---</td><td id="at1">---</td><td id="tm1">8:20 - 9:40</td><td id="le1">---</td></tr>
+			<tr><td>2</td><td id="pr2">---</td><td id="at2">---</td><td id="tm2">9:50 - 11:10</td><td id="le2">---</td></tr>
+			<tr><td>3</td><td id="pr3">---</td><td id="at3">---</td><td id="tm3">11:30 - 12:50</td><td id="le3">---</td></tr>
+			<tr><td>4</td><td id="pr4">---</td><td id="at4">---</td><td id="tm4">13:00 - 14:20</td><td id="le4">---</td></tr>
+			<tr><td>5</td><td id="pr5">---</td><td id="at5">---</td><td id="tm5">14:40 - 16:00</td><td id="le5">---</td></tr>
+			<tr><td>6</td><td id="pr6">---</td><td id="at6">---</td><td id="tm6">16:10 - 17:30</td><td id="le6">---</td></tr>
+			<tr><td>7</td><td id="pr7">---</td><td id="at7">---</td><td id="tm7">17:40 - 19:00</td><td id="le7">---</td></tr>
+			</table>
+			<button  onClick="f()">Розклад на тиждень</button>
+				<table id="tt1" style="display: none">
+					<tr>
+				<th id="day">Понеділок</th>
+					</tr>
+					<tr>
+					<th>№</th>
+					<th>Пара</th>
+					<th>Ауд.</th>
+					<th>Час</th>
+					<th>Викладач</th>
+					</tr>
+					<tr><td>6</td><td id="pr6">СПЗ-Linux(лаби) /VHDL(лаби)</td><td id="at6">312</td><td id="tm6">16:10 - 17:30</td><td id="le6">Яковлєва І.Д.</td></tr>
+					<tr><td>7</td><td id="pr7">VHDL</td><td id="at7">221</td><td id="tm7">17:40 - 19:00</td><td id="le7">Яковлєва І.Д.</td></tr>
+					<tr>
+				<th id="day">Вівторок</th>
+					</tr>
+					<tr>
+					<th>№</th>
+					<th>Пара</th>
+					<th>Ауд.</th>
+					<th>Час</th>
+					<th>Викладач</th>
+					</tr>
+					<tr><td>2</td><td id="pr2">--- /Криптографія(лаби)</td><td id="at2">312</td><td id="tm2">9:50 - 11:10</td><td id="le2">Вацек Д.О.</td></tr>
+					<tr><td>3</td><td id="pr3">--- /Криптографія(практика)</td><td id="at3">317</td><td id="tm3">11:30 - 12:50</td><td id="le3">Іванущак Н.М.</td></tr>
+					<tr><td>4</td><td id="pr4">Криптографія</td><td id="at4">224</td><td id="tm4">13:00 - 14:20</td><td id="le4">Іванущак Н.М.</td></tr>
+					<tr><td>5</td><td id="pr5">English</td><td id="at5">211</td><td id="tm5">14:40 - 16:00</td><td id="le5">Козубська С.В.</td></tr>
+				<th id="day">Середа</th>
+					</tr>
+					<tr>
+					<th>№</th>
+					<th>Пара</th>
+					<th>Ауд.</th>
+					<th>Час</th>
+					<th>Викладач</th>
+					</tr>
+					<tr><td>2</td><td id="pr2">Комп. мережі</td><td id="at2">311</td><td id="tm2">9:50 - 11:10</td><td id="le2">Рощупкіна Н.В.</td></tr>
+					<tr><td>3</td><td id="pr3">Пар. і розп. обч. /Бухоблік</td><td id="at3">106</td><td id="tm3">11:30 - 12:50</td><td id="le3">Лісовенко І.Д.</td></tr>
+					<tr><td>4</td><td id="pr4">Java(лаби)</td><td id="at4">311</td><td id="tm4">13:00 - 14:20</td><td id="le4">Макарчук Р.І.</td></tr>
+					<tr><td>5</td><td id="pr5">СПЗ-Linux /---</td><td id="at5">106</td><td id="tm5">14:40 - 16:00</td><td id="le5">Яковлєва І.Д.</td></tr>
+				<th id="day">Четвер</th>
+					</tr>
+					<tr>
+					<th>№</th>
+					<th>Пара</th>
+					<th>Ауд.</th>
+					<th>Час</th>
+					<th>Викладач</th>
+					</tr>
+					<tr><td>2</td><td id="pr2">Пар. і розп. обч.(лаби) /---</td><td id="at2">313</td><td id="tm2">9:50 - 11:10</td><td id="le2">Лісовенко І.Д.</td></tr>
+					<tr><td>3</td><td id="pr3">Автоматиз. т.пр.(лаби) /---</td><td id="at3">302</td><td id="tm3">11:30 - 12:50</td><td id="le3">Герман І.І.</td></tr>
+					<tr><td>4</td><td id="pr4">Автоматиз. т.пр.</td><td id="at4">106</td><td id="tm4">13:00 - 14:20</td><td id="le4">Воробець О.І.</td></tr>
+					<tr><td>5</td><td id="pr5">Java</td><td id="at5">224</td><td id="tm5">14:40 - 16:00</td><td id="le5">Макарчук Р.І.</td></tr>
+				<th id="day">П'ятниця</th>
+					<tr>
+					<th>№</th>
+					<th>Пара</th>
+					<th>Ауд.</th>
+					<th>Час</th>
+					<th>Викладач</th>
+					</tr>
+					<tr><td>4</td><td id="pr4">Комп. мережі</td><td id="at4">221</td><td id="tm4">13:00 - 14:20</td><td id="le4">Олар О.Я.</td></tr>
+					<tr><td>5</td><td id="pr5">Бухоблік(лаби)</td><td id="at5">307</td><td id="tm5">14:40 - 16:00</td><td id="le5">Гордіца В.М.</td></tr>
+				</table>
+			<script type="text/javascript" src="/tt/script.js"></script>
+		</body>
+	</html>

@@ -5,14 +5,192 @@ var month = date.getMonth();
 var nowDay = date.getDate();
 var uaDay;
 var uaMonth;
-var pairArray = [];
 var weekNum;
+var starth = [8,9,11,13,14,16,17];
+var endh = [9,11,12,14,16,17,19];
+var startm = [20,50,30,0,40,10,40];
+var endm = [40,10,50,20,0,30,0];
+var currPair;
+var PairTime;
+/*var start1h = 8;  var end1h = 9;  var start1m = 20;  var end1m = 40;
+var start2h = 9;  var end2h = 11; var start2m = 50;  var end2m = 10;
+var start3h = 11; var end3h = 12; var start3m = 30;  var end3m = 50;
+var start4h = 13; var end4h = 14; var start4m = 00;  var end4m = 20;
+var start5h = 14; var end5h = 16; var start5m = 40;  var end5m = 00;
+var start6h = 16; var end6h = 17; var start6m = 10;  var end6m = 30;
+var start7h = 17; var end7h = 19; var start7m = 40;  var end7m = 00;*/
+/*Test*/
+var h = date.getHours();
+var m = date.getMinutes();
+var	s = date.getSeconds();
+switch (h){
+case 8:
+	if (startm[0]>=m) {currPair=1;} else {currPair=0;}
+	break;
+case 9:
+	if (endm[0]<=m) {currPair=1;} else {
+	if (startm[1]>=m) {currPair=2;} else{currPair=0;}}
+	break;
+case 10:
+	currPair=2;
+	break;
+case 11:
+	if (endm[1]<=m) {currPair=2;} else {
+	if (startm[2]>=m) {currPair=3;} else{currPair=0;}}
+	break;
+case 12:
+	if (endm[2]<=m) {currPair=3;} else{currPair=0;}
+	break;
+case 13:
+	currPair=4;
+	break;
+case 14:
+	if (endm[3]<=m) {currPair=4;} else{
+	if (startm[4]>=m) {currPair=5;} else{currPair=0;}}
+	break;
+case 15:
+currPair=5;
+	break;
+case 16:
+	if (startm[5]<=m) {currPair=6;} else {currPair=0;}
+	break;
+case 17:
+	if (endm[5]<=m) {currPair=6;} else {
+	if (startm[6]>=m) {currPair=7;} else{currPair=0;}}
+	break;
+case 18:
+	currPair=7;
+	break;
+default:
+	currPair=9;
+	break;
+}
+switch (currPair)
+{
+case 0:
+document.getElementById("p1").innerHTML = 'Перерва';
+break;
+case 1:
+PairTime = (h - (starth[0] * 60))+(m - startm[0]);
+document.getElementById("p1").innerHTML = 'Йде перша пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 2:
+PairTime = (h - (starth[1] * 60))+(m - startm[1]);
+document.getElementById("p1").innerHTML = 'Йде друга пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 3:
+PairTime = (h - (starth[2] * 60))+(m - startm[2]);
+document.getElementById("p1").innerHTML = 'Йде третя пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 4:
+PairTime = (h - (starth[3] * 60))+(m - startm[3]);
+document.getElementById("p1").innerHTML = 'Йде четверта пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 5:
+PairTime = (h - (starth[4] * 60))+(m - startm[4]);
+document.getElementById("p1").innerHTML = "Йде п'ята пара. До кінця - " + PairTime + ' хвилин';
+break;
+case 6:
+PairTime = (h - (starth[5] * 60))+(m - startm[5]);
+document.getElementById("p1").innerHTML = 'Йде шоста пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 7:
+PairTime = (h - (starth[6] * 60))+(m - startm[6]);
+document.getElementById("p1").innerHTML = 'Йде сьома пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 9:
+document.getElementById("p1").innerHTML = 'Пари ще не розпочались';
+break;}
+/*Test*/
+setInterval(function () {
+var h = date.getHours();
+var m = date.getMinutes();
+var	s = date.getSeconds();
+switch (h){
+case 8:
+	if (startm[0]>=m) {currPair=1;} else {currPair=0;}
+	break;
+case 9:
+	if (endm[0]<=m) {currPair=1;} else {
+	if (startm[1]>=m) {currPair=2;} else{currPair=0;}}
+	break;
+case 10:
+	currPair=2;
+	break;
+case 11:
+	if (endm[1]<=m) {currPair=2;} else {
+	if (startm[2]>=m) {currPair=3;} else{currPair=0;}}
+	break;
+case 12:
+	if (endm[2]<=m) {currPair=3;} else{currPair=0;}
+	break;
+case 13:
+	currPair=4;
+	break;
+case 14:
+	if (endm[3]<=m) {currPair=4;} else{
+	if (startm[4]>=m) {currPair=5;} else{currPair=0;}}
+	break;
+case 15:
+currPair=5;
+	break;
+case 16:
+	if (startm[5]<=m) {currPair=6;} else {currPair=0;}
+	break;
+case 17:
+	if (endm[5]<=m) {currPair=6;} else {
+	if (startm[6]>=m) {currPair=7;} else{currPair=0;}}
+	break;
+case 18:
+	currPair=7;
+	break;
+default:
+	currPair=9;
+	break;
+}
+switch (currPair)
+{
+case 0:
+document.getElementById("p1").innerHTML = 'Перерва';
+break;
+case 1:
+PairTime = (h - (starth[0] * 60))+(m - startm[0]);
+document.getElementById("p1").innerHTML = 'Йде перша пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 2:
+PairTime = (h - (starth[1] * 60))+(m - startm[1]);
+document.getElementById("p1").innerHTML = 'Йде друга пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 3:
+PairTime = (h - (starth[2] * 60))+(m - startm[2]);
+document.getElementById("p1").innerHTML = 'Йде третя пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 4:
+PairTime = (h - (starth[3] * 60))+(m - startm[3]);
+document.getElementById("p1").innerHTML = 'Йде четверта пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 5:
+PairTime = (h - (starth[4] * 60))+(m - startm[4]);
+document.getElementById("p1").innerHTML = "Йде п'ята пара. До кінця - " + PairTime + ' хвилин';
+break;
+case 6:
+PairTime = (h - (starth[5] * 60))+(m - startm[5]);
+document.getElementById("p1").innerHTML = 'Йде шоста пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 7:
+PairTime = (h - (starth[6] * 60))+(m - startm[6]);
+document.getElementById("p1").innerHTML = 'Йде сьома пара. До кінця - ' + PairTime + ' хвилин';
+break;
+case 9:
+document.getElementById("p1").innerHTML = 'Пари ще не розпочались';
+break;
+}}, 10000);
 function f(){
-  var e = document.getElementById('tt1').style.display;
-  if( e == 'none' ){
-        document.getElementById('tt1').style.display = 'block';       
-    }
-    else document.getElementById('tt1').style.display = 'none';
+var e = document.getElementById('tt1').style.display;
+if( e == 'none' ){
+document.getElementById('tt1').style.display = 'block';
+}
+else document.getElementById('tt1').style.display = 'none';
 }
 switch(month){
 case 8:
@@ -44,7 +222,7 @@ if (weekNum == 1) {
 document.getElementById("pr6").innerHTML = 'СПЗ-Linux(лаби)';
 document.getElementById("at6").innerHTML = '312';
 document.getElementById("le6").innerHTML = 'Яковлєва І.Д.';
-} else 
+} else
 {
 document.getElementById("pr6").innerHTML = 'VHDL(лаби)';
 document.getElementById("at6").innerHTML = '312';
@@ -80,7 +258,7 @@ document.getElementById("le3").innerHTML = 'Лісовенко І.Д.';
 document.getElementById("pr5").innerHTML = 'СПЗ-Linux';
 document.getElementById("at5").innerHTML = '106';
 document.getElementById("le5").innerHTML = 'Яковлєва І.Д.';
-} else 
+} else
 {
 document.getElementById("pr3").innerHTML = 'Бухоблік';
 document.getElementById("at3").innerHTML = '106';
@@ -127,4 +305,17 @@ uaDay = "неділя";
 break;
 }
 document.getElementById("a1").innerHTML = 'Сьогодні ' + nowDay + ' ' + uaMonth + ', ' + uaDay + '. Вчимось за ' + weekNum + ' тижнем.';
-
+h = (h < 10) ? '0' + h : h;
+m = (m < 10) ? '0' + m : m;
+s = (s < 10) ? '0' + s : s;
+document.getElementById('time').innerHTML = h + ':' + m + ':' + s;
+	setInterval(function () {
+	date = new Date();
+	h = date.getHours();
+	m = date.getMinutes();
+	s = date.getSeconds();
+	h = (h < 10) ? '0' + h : h;
+	m = (m < 10) ? '0' + m : m;
+	s = (s < 10) ? '0' + s : s;
+	document.getElementById('time').innerHTML = h + ':' + m + ':' + s;
+	}, 1000);
