@@ -12,13 +12,6 @@ var startm = [20,50,30,0,40,10,40];
 var endm = [40,10,50,20,0,30,0];
 var currPair;
 var PairTime;
-/*var start1h = 8;  var end1h = 9;  var start1m = 20;  var end1m = 40;
-var start2h = 9;  var end2h = 11; var start2m = 50;  var end2m = 10;
-var start3h = 11; var end3h = 12; var start3m = 30;  var end3m = 50;
-var start4h = 13; var end4h = 14; var start4m = 00;  var end4m = 20;
-var start5h = 14; var end5h = 16; var start5m = 40;  var end5m = 00;
-var start6h = 16; var end6h = 17; var start6m = 10;  var end6m = 30;
-var start7h = 17; var end7h = 19; var start7m = 40;  var end7m = 00;*/
 /*Test*/
 var h = date.getHours();
 var m = date.getMinutes();

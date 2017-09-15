@@ -1,10 +1,9 @@
 	body {
-	
+	font-family: 'Roboto', sans-serif;
 	}
 
 	table {
 	border-collapse: collapse; /* Убираем двойные линии между ячейками */
-	width: 550px; /* Ширина таблицы */
 	}
 	th, td {
 	border: 1px solid black; /* Параметры рамки */
@@ -22,8 +21,6 @@
 	color: #FFFFFF;
 	background: #D63636;
 	height: 20px;
-	vertical-align: bottom; 
-	padding: 0; 
-	} 
-
-	
+	vertical-align: bottom;
+	padding: 0;
+	}
