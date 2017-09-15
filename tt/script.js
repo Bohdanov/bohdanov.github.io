@@ -25,38 +25,38 @@ var m = date.getMinutes();
 var	s = date.getSeconds();
 switch (h){
 case 8:
-	if (startm[0]>=m) {currPair=1;} else {currPair=0;}
+	if (startm[0]<=m) {currPair=1;} else {currPair=0;};
 	break;
 case 9:
-	if (endm[0]<=m) {currPair=1;} else {
-	if (startm[1]>=m) {currPair=2;} else{currPair=0;}}
+	if (endm[0]>=m) {currPair=1;} else {
+	if (startm[1]<=m) {currPair=2;} else{currPair=0;}};
 	break;
 case 10:
 	currPair=2;
 	break;
 case 11:
-	if (endm[1]<=m) {currPair=2;} else {
-	if (startm[2]>=m) {currPair=3;} else{currPair=0;}}
+	if (endm[1]>=m) {currPair=2;} else {
+	if (startm[2]<=m) {currPair=3;} else{currPair=0;}};
 	break;
 case 12:
-	if (endm[2]<=m) {currPair=3;} else{currPair=0;}
+	if (endm[2]>=m) {currPair=3;} else{currPair=0;};
 	break;
 case 13:
 	currPair=4;
 	break;
 case 14:
-	if (endm[3]<=m) {currPair=4;} else{
-	if (startm[4]>=m) {currPair=5;} else{currPair=0;}}
+	if (endm[3]>=m) {currPair=4;} else{
+	if (startm[4]<=m) {currPair=5;} else{currPair=0;}};
 	break;
 case 15:
 currPair=5;
 	break;
 case 16:
-	if (startm[5]<=m) {currPair=6;} else {currPair=0;}
+	if (startm[5]>=m) {currPair=6;} else {currPair=0;};
 	break;
 case 17:
-	if (endm[5]<=m) {currPair=6;} else {
-	if (startm[6]>=m) {currPair=7;} else{currPair=0;}}
+	if (endm[5]>=m) {currPair=6;} else {
+	if (startm[6]<=m) {currPair=7;} else{currPair=0;}};
 	break;
 case 18:
 	currPair=7;
@@ -71,31 +71,31 @@ case 0:
 document.getElementById("p1").innerHTML = 'Перерва';
 break;
 case 1:
-PairTime = (h - (starth[0] * 60))+(m - startm[0]);
+PairTime = 80-(((h - starth[0]) * 60)+(m - startm[0]));
 document.getElementById("p1").innerHTML = 'Йде перша пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 2:
-PairTime = (h - (starth[1] * 60))+(m - startm[1]);
+PairTime = 80-(((h - starth[1]) * 60)+(m - startm[1]));
 document.getElementById("p1").innerHTML = 'Йде друга пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 3:
-PairTime = (h - (starth[2] * 60))+(m - startm[2]);
+PairTime = 80-(((h - starth[2]) * 60)+(m - startm[2]));
 document.getElementById("p1").innerHTML = 'Йде третя пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 4:
-PairTime = (h - (starth[3] * 60))+(m - startm[3]);
+PairTime = 80-(((h - starth[3]) * 60)+(m - startm[3]));
 document.getElementById("p1").innerHTML = 'Йде четверта пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 5:
-PairTime = (h - (starth[4] * 60))+(m - startm[4]);
+PairTime = 80-(((h - starth[4]) * 60)+(m - startm[4]));
 document.getElementById("p1").innerHTML = "Йде п'ята пара. До кінця - " + PairTime + ' хвилин';
 break;
 case 6:
-PairTime = (h - (starth[5] * 60))+(m - startm[5]);
+PairTime = 80-(((h - starth[5]) * 60)+(m - startm[5]));
 document.getElementById("p1").innerHTML = 'Йде шоста пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 7:
-PairTime = (h - (starth[6] * 60))+(m - startm[6]);
+PairTime = 80-(((h - starth[6]) * 60)+(m - startm[6]));
 document.getElementById("p1").innerHTML = 'Йде сьома пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 9:
@@ -108,38 +108,38 @@ var m = date.getMinutes();
 var	s = date.getSeconds();
 switch (h){
 case 8:
-	if (startm[0]>=m) {currPair=1;} else {currPair=0;}
+	if (startm[0]<=m) {currPair=1;} else {currPair=0;};
 	break;
 case 9:
-	if (endm[0]<=m) {currPair=1;} else {
-	if (startm[1]>=m) {currPair=2;} else{currPair=0;}}
+	if (endm[0]>=m) {currPair=1;} else {
+	if (startm[1]<=m) {currPair=2;} else{currPair=0;}};
 	break;
 case 10:
 	currPair=2;
 	break;
 case 11:
-	if (endm[1]<=m) {currPair=2;} else {
-	if (startm[2]>=m) {currPair=3;} else{currPair=0;}}
+	if (endm[1]>=m) {currPair=2;} else {
+	if (startm[2]<=m) {currPair=3;} else{currPair=0;}};
 	break;
 case 12:
-	if (endm[2]<=m) {currPair=3;} else{currPair=0;}
+	if (endm[2]>=m) {currPair=3;} else{currPair=0;};
 	break;
 case 13:
 	currPair=4;
 	break;
 case 14:
-	if (endm[3]<=m) {currPair=4;} else{
-	if (startm[4]>=m) {currPair=5;} else{currPair=0;}}
+	if (endm[3]>=m) {currPair=4;} else{
+	if (startm[4]<=m) {currPair=5;} else{currPair=0;}};
 	break;
 case 15:
 currPair=5;
 	break;
 case 16:
-	if (startm[5]<=m) {currPair=6;} else {currPair=0;}
+	if (startm[5]>=m) {currPair=6;} else {currPair=0;};
 	break;
 case 17:
-	if (endm[5]<=m) {currPair=6;} else {
-	if (startm[6]>=m) {currPair=7;} else{currPair=0;}}
+	if (endm[5]>=m) {currPair=6;} else {
+	if (startm[6]<=m) {currPair=7;} else{currPair=0;}};
 	break;
 case 18:
 	currPair=7;
@@ -154,37 +154,37 @@ case 0:
 document.getElementById("p1").innerHTML = 'Перерва';
 break;
 case 1:
-PairTime = (h - (starth[0] * 60))+(m - startm[0]);
+PairTime = 80-(((h - starth[0]) * 60)+(m - startm[0]));
 document.getElementById("p1").innerHTML = 'Йде перша пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 2:
-PairTime = (h - (starth[1] * 60))+(m - startm[1]);
+PairTime = 80-(((h - starth[1]) * 60)+(m - startm[1]));
 document.getElementById("p1").innerHTML = 'Йде друга пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 3:
-PairTime = (h - (starth[2] * 60))+(m - startm[2]);
+PairTime = 80-(((h - starth[2]) * 60)+(m - startm[2]));
 document.getElementById("p1").innerHTML = 'Йде третя пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 4:
-PairTime = (h - (starth[3] * 60))+(m - startm[3]);
+PairTime = 80-(((h - starth[3]) * 60)+(m - startm[3]));
 document.getElementById("p1").innerHTML = 'Йде четверта пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 5:
-PairTime = (h - (starth[4] * 60))+(m - startm[4]);
+PairTime = 80-(((h - starth[4]) * 60)+(m - startm[4]));
 document.getElementById("p1").innerHTML = "Йде п'ята пара. До кінця - " + PairTime + ' хвилин';
 break;
 case 6:
-PairTime = (h - (starth[5] * 60))+(m - startm[5]);
+PairTime = 80-(((h - starth[5]) * 60)+(m - startm[5]));
 document.getElementById("p1").innerHTML = 'Йде шоста пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 7:
-PairTime = (h - (starth[6] * 60))+(m - startm[6]);
+PairTime = 80-(((h - starth[6]) * 60)+(m - startm[6]));
 document.getElementById("p1").innerHTML = 'Йде сьома пара. До кінця - ' + PairTime + ' хвилин';
 break;
 case 9:
 document.getElementById("p1").innerHTML = 'Пари ще не розпочались';
-break;
-}}, 10000);
+break;}
+}, 10000);
 function f(){
 var e = document.getElementById('tt1').style.display;
 if( e == 'none' ){
