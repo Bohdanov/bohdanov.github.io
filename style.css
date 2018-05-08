@@ -112,7 +112,10 @@ hr.light-100 {
   .social a {
     font-size: 4em;
     padding: 2rem;
-  }
+}
+  .owlygon {
+    font-size: 250%;
+}
   }
 @media (max-width: 768px) {
 .display-4 {
