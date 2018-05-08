@@ -163,7 +163,7 @@ figure {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   will-change: transform;
-  padding: 30em 0 10em 0;
+  padding: 27em 0 13em 0;
   color: #F3F3F4;
 }
 #fixed1 {
