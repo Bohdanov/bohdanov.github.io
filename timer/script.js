@@ -7,11 +7,12 @@ function  altTimer(){
   var myDate = new Date();
   var differenceInTime = (totalMiliseconds-(endDate-myDate));
   var percentageAlt = (100*differenceInTime)/totalMiliseconds;
-  tim1.innerHTML = "Alternative progress: " + percentageAlt.toPrecision(6);
+  tim1.innerHTML = "Alternative progress: " + percentageAlt.toPrecision(5);
+  var weeksToFin = ((totalMiliseconds - differenceInTime) / (1000 * 60 * 60 * 24 * 7));
   var daysToFin = ((totalMiliseconds - differenceInTime) / (1000 * 60 * 60 * 24));
   var hoursToFin = ((totalMiliseconds - differenceInTime) / (1000 * 60 * 60));
   var minutesToFin = ((totalMiliseconds - differenceInTime) / (1000 * 60));
   var secondsToFin = ((totalMiliseconds - differenceInTime) / (1000));
-  tim2.innerHTML = "Time: " + Math.floor(daysToFin) + " days, " + Math.floor(hoursToFin) + " hours, " + Math.floor(minutesToFin) + " minutes, " + Math.floor(secondsToFin) + " seconds";
+  tim2.innerHTML = "Time: " + Math.floor(weeksToFin) + " weeks, " + Math.floor(daysToFin) + " days, " + Math.floor(hoursToFin) + " hours, " + Math.floor(minutesToFin) + " minutes, " + Math.floor(secondsToFin) + " seconds";
   }
 var diff = setInterval(altTimer, 50);
