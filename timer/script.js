@@ -7,7 +7,7 @@ function  altTimer(){
   var myDate = new Date();
   var differenceInTime = (totalMiliseconds-(endDate-myDate));
   var percentageAlt = (100*differenceInTime)/totalMiliseconds;
-  tim1.innerHTML = "Alternative progress: " + percentageAlt.toPrecision(7);
+  tim1.innerHTML = "Alternative progress: " + percentageAlt.toPrecision(9);
   var weeksToFin = ((totalMiliseconds - differenceInTime) / (1000 * 60 * 60 * 24 * 7));
   var daysToFin = ((totalMiliseconds - differenceInTime) / (1000 * 60 * 60 * 24));
   var hoursToFin = ((totalMiliseconds - differenceInTime) / (1000 * 60 * 60));
